@@ -1,0 +1,4 @@
+u_age 20                            =;
+ten_years_later 10                  =;
+current_age u_age ten_years_later + =;
+current_age 1 print;

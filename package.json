@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "rpn with source-map",
   "main": "lib/rpn.js",
-  "entry": "lib/rpn.js",
   "scripts": {
-    "test": "rpn.js ./test/test.rpn"
+    "test": "rpn.js ./test/test.rpn",
+    "test1": "rpn.js ./test/test1.rpn"
   },
   "bin": {
       "rpn.js": "./bin/rpn.js"

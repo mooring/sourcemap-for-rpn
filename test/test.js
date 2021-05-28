@@ -20,7 +20,7 @@ __rpn.print = function( val, repeat){
 __rpn.push(8);
 __rpn.push('a');
 __rpn.scope[__rpn.pop()] = __rpn.pop(); 
-__rpn.push(3);
+__rpn.push(2);
 __rpn.push('b');
 __rpn.scope[__rpn.pop()] = __rpn.pop(); 
 __rpn.push(__rpn.scope.a);
@@ -33,12 +33,6 @@ if (__rpn.temp === 0) throw new Error('divide by zero error');
 __rpn.push(__rpn.pop() / __rpn.temp);
 __rpn.push('c');
 __rpn.scope[__rpn.pop()] = __rpn.pop(); 
-__rpn.push(__rpn.scope.c);
-__rpn.push(1);
-__rpn.temp = __rpn.pop();
-if (__rpn.temp <= 0) throw new Error('argument must be greater than 0');
-if (Math.floor(__rpn.temp) != __rpn.temp) throw new Error('argument must be an interge');
-__rpn.print(__rpn.pop(), __rpn.temp);
 __rpn.push(__rpn.scope.a);
 __rpn.push(1);
 __rpn.temp = __rpn.pop();
@@ -51,5 +45,11 @@ __rpn.temp = __rpn.pop();
 if (__rpn.temp <= 0) throw new Error('argument must be greater than 0');
 if (Math.floor(__rpn.temp) != __rpn.temp) throw new Error('argument must be an interge');
 __rpn.print(__rpn.pop(), __rpn.temp);
+__rpn.push(__rpn.scope.c);
+__rpn.push(1);
+__rpn.temp = __rpn.pop();
+if (__rpn.temp <= 0) throw new Error('argument must be greater than 0');
+if (Math.floor(__rpn.temp) != __rpn.temp) throw new Error('argument must be an interge');
+__rpn.print(__rpn.pop(), __rpn.temp);
 
-//# sourceMappingURL=./test/test.js.map
+//# sourceMappingURL=test/test.js.map
