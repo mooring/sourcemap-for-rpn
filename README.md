@@ -81,4 +81,4 @@ console.log(current_age)
 rpn.js test/test1.rpn
 node test/test1.js
 ```
-![test1效果图](http://test.codernotes.club/rpn~test.png)
+![test1效果图](http://test.codernotes.club/rpn~test1.png)
