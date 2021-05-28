@@ -1,0 +1,19 @@
+{
+  "name": "rpn",
+  "version": "1.0.0",
+  "description": "rpn with source-map",
+  "main": "lib/rpn.js",
+  "entry": "lib/rpn.js",
+  "scripts": {
+    "test": "rpn.js ./test/test.rpn"
+  },
+  "bin": {
+      "rpn.js": "./bin/rpn.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jison": "^0.4.18",
+    "source-map": "^0.1.43"
+  }
+}
