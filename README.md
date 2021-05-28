@@ -8,6 +8,10 @@
 
 学习source-map时产物, 代码作用为： 将逆波兰表达式 `3 4 5 + *`转化为js表达式`3 * ( 4 + 5 )`
 
+使用了`jison`做分词及语法解析, 然后通过`source-map`生成 sourcemap相关代码，重点正如原文所说：
+
+**其他语言编译为js的过程，至于source-map只是最后一步**
+
 ### 与原文变化
 
 原文为浏览器运行环境，此代码为环境无关， 输出为 console.log
@@ -51,7 +55,7 @@ console.log(c);
 rpn.js test/test.rpn
 node test/test.js
 ```
-![](http://test.codernotes.club/rpn~test.png)
+![test图](http://test.codernotes.club/rpn~test.png)
 
 > 如果将 `test/test.rpn`第2行的 `b 2 =;`修改为 `b 1 =;`,编译正常，但运行会报错，即（除0错误)
 
@@ -77,4 +81,4 @@ console.log(current_age)
 rpn.js test/test1.rpn
 node test/test1.js
 ```
-![](http://test.codernotes.club/rpn~test.png)
+![test1效果图](http://test.codernotes.club/rpn~test.png)
