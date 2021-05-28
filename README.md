@@ -55,7 +55,7 @@ console.log(c);
 rpn.js test/test.rpn
 node test/test.js
 ```
-![test图](http://test.codernotes.club/rpn~test.png)
+![test效果图](http://test.codernotes.club/rpn-test.png)
 
 > 如果将 `test/test.rpn`第2行的 `b 2 =;`修改为 `b 1 =;`,编译正常，但运行会报错，即（除0错误)
 
