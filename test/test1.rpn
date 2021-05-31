@@ -1,4 +1,8 @@
+# var u_age = 20
 u_age 20                            =;
+# var ten_years_later = 10
 ten_years_later 10                  =;
+# var current_age = u_age + ten_years_later
 current_age u_age ten_years_later + =;
+# console.log(current_age)
 current_age 1 print;

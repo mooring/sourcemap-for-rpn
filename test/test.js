@@ -52,4 +52,4 @@ if (__rpn.temp <= 0) throw new Error('argument must be greater than 0');
 if (Math.floor(__rpn.temp) != __rpn.temp) throw new Error('argument must be an interge');
 __rpn.print(__rpn.pop(), __rpn.temp);
 
-//# sourceMappingURL=test/test.js.map
+//# sourceMappingURL=./test.js.map

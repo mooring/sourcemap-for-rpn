@@ -4,8 +4,7 @@
   "description": "rpn with source-map",
   "main": "lib/rpn.js",
   "scripts": {
-    "test": "rpn.js ./test/test.rpn",
-    "test1": "rpn.js ./test/test1.rpn"
+    "test": "cd test;rpn.js ./test.rpn;rpn.js ./test1.rpn"
   },
   "bin": {
       "rpn.js": "./bin/rpn.js"
